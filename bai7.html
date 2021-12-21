@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhap so</p>
+<input id="inp" onchange="tim()" type="text">
+<p id="kQ"></p>
+<script>
+   function tim() {
+       let arr = [3,2,5,4,8,7,9,2];
+       let N = document.getElementById("inp").value;
+       for(i=0; i<arr.length-1; i++){
+           if(arr[i]== N){
+               document.getElementById("kQ").innerHTML = i;
+           }else{
+               document.getElementById("kQ").innerHTML = "+N+"+ "Khong co trong bang";
+           }
+       }
+   }
+
+</script>
+</body>
+</html>

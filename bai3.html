@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhap so bat ky</p>
+<input id="inp" onchange="tinh()" type="text">
+<p id="kQ"></p>
+<script>
+    function tinh() {
+        let N = document.getElementById("inp").value;
+        document.getElementById("kQ").innerHTML = "Binh phuong so do la: "+ N*N;
+    }
+    tinh();
+</script>
+</body>
+</html>

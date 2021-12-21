@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="inp1" type="text">
+<input id="inp2" onchange="tinh()" type="text">
+<p id="kQ"></p>
+<script>
+    function tinh() {
+        let a = parseInt(document.getElementById("inp1").value);
+        let b = parseInt(document.getElementById("inp2").value);
+        let c= a+b;
+        document.getElementById("kQ").innerHTML = "tich 2 so " + c;
+    }
+    tinh();
+</script>
+</body>
+</html>
